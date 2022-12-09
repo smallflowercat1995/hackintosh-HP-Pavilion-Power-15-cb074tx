@@ -5,6 +5,18 @@
 `EFI` 是调好的 opencore 0.8.8 引导，三码已清，自行更换，清理nvram  
 `opencore debug 流程` 是针对个人机器 惠普光影精灵 III 代 HP 畅游人 Power 15-cb074TX 笔记本 做的记录和调试，方便自己以后做参考，其它主板型号和CPU请酌情参考  
 
+## 目录结构
+
+    .                                  
+    ├── EFI                            # 配置好已经清除三码的 EFI 引导文件 
+    └── opencore debug 流程             # opencore配置制作流程说明 
+        ├── 01Finding your hardware    # 第一步找到你的硬件参数说明
+        ├── 02DVMT cfg unlock          # 第二步根据第一步找到的主板型号，解锁 CFGLOCK 和配置最大 DVMT 说明
+        ├── 03USB Creation             # 第三步下载 opencore 文件说明
+        ├── 04Gathering files          # 第四步根据第一步获取的硬件参数配置 kexts 和 ACPI 文件说明 
+        ├── 05config.plist Setup       # 第五步根据官网教程进行常规配置说明
+        └── 06debug                    # 第六步根据报错现象做调试说明
+
 ## 官方机型参数
 <a href="https://support.hp.com/cn-zh/product/hp-pavilion-power-15-cb000-laptop-pc/15551388/model/17033411/document/c05549489" title="官方参数">https://support.hp.com/cn-zh/product/hp-pavilion-power-15-cb000-laptop-pc/15551388/model/17033411/document/c05549489</a>  
 
